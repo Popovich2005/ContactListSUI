@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct SectionTableView: View {
-    @Binding var persons: [Person]
+    let persons: [Person]
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach($persons, id: \.phoneNumber) { $person in
+                ForEach(persons, id: \.phoneNumber) { person in
                     Section(header: Text("\(person.fullName)")) {
                      SectionView(person: person)
                     }
@@ -26,5 +26,5 @@ struct SectionTableView: View {
 }
 
 #Preview {
-    SectionTableView(persons: .constant(Person.getContactList()))
+    SectionTableView(persons: Person.getContactList())
 }
