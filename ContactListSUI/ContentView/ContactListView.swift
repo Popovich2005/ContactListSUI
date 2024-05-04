@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContactListView: View {
-    @State private var persons = Person.getContactList()
+    @Binding var persons: [Person]
     
     var body: some View {
         NavigationView { 
@@ -24,5 +24,5 @@ struct ContactListView: View {
 }
 
 #Preview {
-    ContactListView()
+    ContactListView(persons: .constant(Person.getContactList()))
 }

@@ -64,11 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				3ABA57BB2BE4EA7D00AC3451 /* ContactListSUIApp.swift */,
-				3ABA57E62BE589CA00AC3451 /* SectionView.swift */,
-				3ABA57E42BE5895000AC3451 /* ContactDetailsView.swift */,
-				3ABA57E22BE5877200AC3451 /* SectionTableView.swift */,
-				3ABA57E02BE5874F00AC3451 /* ContactListView.swift */,
-				3ABA57BD2BE4EA7D00AC3451 /* ContentView.swift */,
+				3ABA57E82BE6119700AC3451 /* ContentView */,
 				3ABA57DD2BE586C800AC3451 /* Models */,
 				3ABA57DA2BE5860C00AC3451 /* Services */,
 				3ABA57BF2BE4EA7F00AC3451 /* Assets.xcassets */,
@@ -99,6 +95,18 @@
 				3ABA57DE2BE586E600AC3451 /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3ABA57E82BE6119700AC3451 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				3ABA57E62BE589CA00AC3451 /* SectionView.swift */,
+				3ABA57E42BE5895000AC3451 /* ContactDetailsView.swift */,
+				3ABA57E22BE5877200AC3451 /* SectionTableView.swift */,
+				3ABA57E02BE5874F00AC3451 /* ContactListView.swift */,
+				3ABA57BD2BE4EA7D00AC3451 /* ContentView.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
